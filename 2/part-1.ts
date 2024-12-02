@@ -51,4 +51,3 @@ const filteredLevels = reportsWithLevels.filter((levels) => {
 })
 
 const result = filteredLevels.length;
-// should be 341

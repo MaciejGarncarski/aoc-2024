@@ -25,4 +25,3 @@ const sum = sortedColA.reduce((acc, cur, idx) => {
 }, 0);
 
 console.log(sum)
-// should be 3574690
