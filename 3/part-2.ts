@@ -25,8 +25,6 @@ const mappedMatches = Array.from(matches || []).reduce((acc: ReduceResult, el) =
         .map((str) => parseInt(str, 10))
         .reduce((acc, el) => acc * el, 1);
 
-    console.log(acc.valid)
-
     const muls = acc.valid ? [...acc.muls, numMuls] : acc.muls
 
     return {...acc, muls};
@@ -36,4 +34,4 @@ const mappedMatches = Array.from(matches || []).reduce((acc: ReduceResult, el) =
 })
 
 const result = mappedMatches.muls.reduce((acc, el) => acc + el, 0);
-console.log(result, mappedMatches.muls)
+console.log(result)
